@@ -1,5 +1,5 @@
 <?php
-    require('php/connection/connection.php');
+    require('../connection/connection.php');
     $movie = $_REQUEST['movie'];
     $mood = $_REQUEST['mood'];
     $query = "SELECT * FROM `movies` WHERE `movie` = '$movie'";
@@ -27,3 +27,4 @@
     else{
         echo 'fail';
     }
+?>

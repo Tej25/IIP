@@ -9,9 +9,9 @@ function admin_login(){
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                var response = this.responseText;
+                var response = xmlhttp.responseText;
                 if(response == "success"){
-                    window.location.href = "admin_home.php";
+                    window.location.href = "http://localhost/IIP/html/home.html";
                 }
                 else{
                     alert("Invalid email or password");
